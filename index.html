@@ -1,33 +1,330 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Foosball Elo Ratings</title>
-    <style>
-        body { font-family: Arial; background:#111; color:white; }
-        table { border-collapse: collapse; width: 70%; margin: auto; }
-        th, td { padding: 8px 12px; border: 1px solid #444; text-align: left; }
-        th { background:#222; }
-    </style>
+<meta charset="UTF-8">
+<title>TCFS Foosball Ratings</title>
+
+<!-- Chart.js for graphs -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #111;
+        color: #eee;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        width: 85%;
+        margin: auto;
+        padding-top: 30px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+    }
+    th, td {
+        border: 1px solid #444;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        cursor: pointer;
+        background: #222;
+    }
+    tr:hover {
+        background: #222;
+    }
+    .controls {
+        margin-bottom: 20px;
+    }
+    button {
+        background: #0066ff;
+        border: none;
+        padding: 10px 16px;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    button:hover {
+        background: #004ccc;
+    }
+    input {
+        padding: 8px 12px;
+        border-radius: 5px;
+        border: 1px solid #444;
+        background: #222;
+        color: white;
+    }
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(0,0,0,0.7);
+        justify-content: center;
+        align-items: center;
+    }
+    .modal-content {
+        background: #222;
+        padding: 20px;
+        border-radius: 8px;
+        min-width: 60%;
+        max-height: 80%;
+        overflow-y: auto;
+    }
+    .close-btn {
+        float: right;
+        cursor: pointer;
+        font-size: 22px;
+        color: #aaa;
+    }
+    .close-btn:hover {
+        color: white;
+    }
+</style>
 </head>
 <body>
-<h1 style="text-align:center;">Foosball Elo Ratings</h1>
-<table id="eloTable">
-    <tr><th>Player</th><th>Singles</th><th>Doubles</th></tr>
-</table>
+
+<div class="container">
+    <h1>TCFS Foosball Elo Ratings</h1>
+
+    <div class="controls">
+        <button onclick="setMode('all')">Show All</button>
+        <button onclick="setMode('singles')">Singles Only</button>
+        <button onclick="setMode('doubles')">Doubles Only</button>
+        <button onclick="openMatchHistory()">Match History</button>
+        <input id="searchBox" placeholder="Search player..." oninput="renderTable()">
+    </div>
+
+    <table id="eloTable">
+        <thead>
+            <tr>
+                <th onclick="sortTable('player')">Player</th>
+                <th id="thSingles" onclick="sortTable('singles')">Singles</th>
+                <th id="thDoubles" onclick="sortTable('doubles')">Doubles</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<!-- Player modal -->
+<div id="playerModal" class="modal" onclick="closeModal(event, 'playerModal')">
+    <div class="modal-content">
+        <span class="close-btn" onclick="hide('playerModal')">&times;</span>
+        <h2 id="playerName"></h2>
+        <canvas id="playerChart" height="120"></canvas>
+    </div>
+</div>
+
+<!-- Match History modal -->
+<div id="historyModal" class="modal" onclick="closeModal(event, 'historyModal')">
+    <div class="modal-content">
+        <span class="close-btn" onclick="hide('historyModal')">&times;</span>
+        <h2>Match History</h2>
+        <table id="matchTable">
+            <thead>
+                <tr>
+                    <th>Timestamp</th>
+                    <th>Mode</th>
+                    <th>Team 1</th>
+                    <th>Team 2</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
 
 <script>
-fetch("players.json?" + Date.now())
-    .then(r => r.json())
-    .then(data => {
-        let table = document.getElementById("eloTable");
-        Object.entries(data).forEach(([name, vals]) => {
-            let row = table.insertRow();
-            row.insertCell(0).innerText = name;
-            row.insertCell(1).innerText = vals.singles.toFixed(1);
-            row.insertCell(2).innerText = vals.doubles.toFixed(1);
-        });
+// ------------------ GLOBALS -----------------------
+let players = {};
+let historyData = [];
+let currentMode = "all";
+let sortField = "player";
+let sortAsc = true;
+let chart;
+
+// ------------------ FETCH DATA -----------------------
+async function loadData() {
+    players = await fetch("players.json?" + Date.now()).then(r => r.json());
+    historyData = await fetch("history.json?" + Date.now()).then(r => r.json());
+    renderTable();
+}
+
+function setMode(mode) {
+    currentMode = mode;
+    renderTable();
+}
+
+function sortTable(field) {
+    if (sortField === field) sortAsc = !sortAsc;
+    else { sortField = field; sortAsc = true; }
+    renderTable();
+}
+
+// ------------------ HELPER: COLOR CODE RATING -----------------------
+function ratingColor(value) {
+    // 1000 = red, 1500 = yellow, 2000 = green
+    const min = 1200, mid = 1500, max = 1800;
+
+    if (value < mid) {
+        // red -> yellow
+        let ratio = (value - min) / (mid - min);
+        ratio = Math.max(0, Math.min(1, ratio));
+        const r = 255;
+        const g = Math.floor(255 * ratio);
+        return `rgb(${r},${g},0)`;
+    } else {
+        // yellow -> green
+        let ratio = (value - mid) / (max - mid);
+        ratio = Math.max(0, Math.min(1, ratio));
+        const r = Math.floor(255 * (1 - ratio));
+        const g = 255;
+        return `rgb(${r},${g},0)`;
+    }
+}
+
+// ------------------ TABLE RENDERING -----------------------
+function renderTable() {
+    const tbody = document.querySelector("#eloTable tbody");
+    tbody.innerHTML = "";
+
+    let search = document.getElementById("searchBox").value.toLowerCase();
+
+    let rows = Object.entries(players).map(([name, vals]) => ({
+        name,
+        singles: vals.singles,
+        doubles: vals.doubles,
+        singles_games: vals.singles_games,
+        doubles_games: vals.doubles_games
+    }));
+
+    // search filter
+    rows = rows.filter(r => r.name.toLowerCase().includes(search));
+
+    // mode filter
+    if (currentMode === "singles") {
+        rows = rows.filter(r => r.singles_games > 0);
+    }
+    if (currentMode === "doubles") {
+        rows = rows.filter(r => r.doubles_games > 0);
+    }
+
+    // hide columns
+    document.getElementById("thSingles").style.display =
+        currentMode === "doubles" ? "none" : "";
+    document.getElementById("thDoubles").style.display =
+        currentMode === "singles" ? "none" : "";
+
+    // sort rows
+    rows.sort((a, b) => {
+        if (sortField === "player")
+            return sortAsc ? a.name.localeCompare(b.name)
+                           : b.name.localeCompare(a.name);
+
+        return sortAsc ? a[sortField] - b[sortField]
+                       : b[sortField] - a[sortField];
     });
+
+    // populate table
+    rows.forEach(p => {
+        const tr = document.createElement("tr");
+
+        const singlesColor = ratingColor(p.singles);
+        const doublesColor = ratingColor(p.doubles);
+
+        tr.innerHTML = `
+            <td style="cursor:pointer" onclick="showPlayer('${p.name}')">${p.name}</td>
+            <td style="display:${currentMode === 'doubles' ? 'none' : 'table-cell'}; color:${singlesColor}">
+                ${p.singles.toFixed(1)}
+            </td>
+            <td style="display:${currentMode === 'singles' ? 'none' : 'table-cell'}; color:${doublesColor}">
+                ${p.doubles.toFixed(1)}
+            </td>
+        `;
+
+        tbody.appendChild(tr);
+    });
+}
+
+// ------------------ PLAYER MODAL -----------------------
+function showPlayer(name) {
+    document.getElementById("playerName").innerText = name;
+    show("playerModal");
+
+    let singles = [];
+    let doubles = [];
+    let indices = [];
+
+    historyData.forEach((snapshot, idx) => {
+        if (snapshot[name]) {
+            singles.push(snapshot[name].singles);
+            doubles.push(snapshot[name].doubles);
+            indices.push(idx + 1);
+        }
+    });
+
+    if (chart) chart.destroy();
+    chart = new Chart(document.getElementById("playerChart"), {
+        type: "line",
+        data: {
+            labels: indices,
+            datasets: [
+                {
+                    label: "Singles",
+                    data: singles,
+                    borderColor: "red",
+                    fill: false
+                },
+                {
+                    label: "Doubles",
+                    data: doubles,
+                    borderColor: "blue",
+                    fill: false
+                }
+            ]
+        },
+        options: { responsive: true }
+    });
+}
+
+// ------------------ MATCH HISTORY MODAL -----------------------
+async function openMatchHistory() {
+    const data = await fetch("matches.json?" + Date.now()).then(r => r.json());
+    const tbody = document.querySelector("#matchTable tbody");
+    tbody.innerHTML = "";
+
+    data.forEach(m => {
+        const t1 = Array.isArray(m.team1) ? m.team1.join(", ") : m.team1;
+        const t2 = Array.isArray(m.team2) ? m.team2.join(", ") : m.team2;
+
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+            <td>${m.timestamp || ""}</td>
+            <td>${m.mode}</td>
+            <td>${t1}</td>
+            <td>${t2}</td>
+            <td>${m.score1} - ${m.score2}</td>`;
+        tbody.appendChild(tr);
+    });
+
+    show("historyModal");
+}
+
+// ------------------ MODAL HELPERS -----------------------
+function show(id) { document.getElementById(id).style.display = "flex"; }
+function hide(id) { document.getElementById(id).style.display = "none"; }
+function closeModal(event, id) { if (event.target.id === id) hide(id); }
+
+// ------------------ START -----------------------
+loadData();
 </script>
+
 </body>
 </html>
