@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Foosball Elo Ratings</title>
+    <style>
+        body { font-family: Arial; background:#111; color:white; }
+        table { border-collapse: collapse; width: 70%; margin: auto; }
+        th, td { padding: 8px 12px; border: 1px solid #444; text-align: left; }
+        th { background:#222; }
+    </style>
+</head>
+<body>
+<h1 style="text-align:center;">Foosball Elo Ratings</h1>
+<table id="eloTable">
+    <tr><th>Player</th><th>Singles</th><th>Doubles</th></tr>
+</table>
+
+<script>
+fetch("players.json")
+    .then(r => r.json())
+    .then(data => {
+        let table = document.getElementById("eloTable");
+        Object.entries(data).forEach(([name, vals]) => {
+            let row = table.insertRow();
+            row.insertCell(0).innerText = name;
+            row.insertCell(1).innerText = vals.singles.toFixed(1);
+            row.insertCell(2).innerText = vals.doubles.toFixed(1);
+        });
+    });
+</script>
+</body>
+</html>
