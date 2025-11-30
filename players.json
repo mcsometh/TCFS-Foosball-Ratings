@@ -120,9 +120,9 @@
     "doubles_games": 6
   },
   "Aiden": {
-    "singles": 1500,
+    "singles": 1548.0,
     "doubles": 1406.81936801302,
-    "singles_games": 0,
+    "singles_games": 1,
     "doubles_games": 10
   },
   "Martin": {
@@ -177,6 +177,12 @@
     "singles": 1394.8479202911403,
     "doubles": 1500,
     "singles_games": 2,
+    "doubles_games": 0
+  },
+  "Alex": {
+    "singles": 1452.0,
+    "doubles": 1500,
+    "singles_games": 1,
     "doubles_games": 0
   }
 }

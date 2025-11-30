@@ -1869,5 +1869,13 @@
     "team2": "Nola",
     "score1": 7,
     "score2": 3
+  },
+  {
+    "timestamp": "2025-11-30 18:18:57",
+    "mode": "singles",
+    "team1": "Aiden",
+    "team2": "Alex",
+    "score1": 7,
+    "score2": 6
   }
 ]
