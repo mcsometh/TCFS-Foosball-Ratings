@@ -103,6 +103,7 @@
     <table id="eloTable">
         <thead>
             <tr>
+                <th onclick="sortTable('rank')">Rank</th>
                 <th onclick="sortTable('player')">Player</th>
                 <th id="thSingles" onclick="sortTable('singles')">Singles</th>
                 <th id="thDoubles" onclick="sortTable('doubles')">Doubles</th>
@@ -234,22 +235,43 @@ function renderTable() {
 
     // populate table
     rows.forEach(p => {
-        const tr = document.createElement("tr");
+                // ------------------ RANKING LOGIC -----------------------
+        let rankField = (currentMode === "singles") ? "singles" :
+                        (currentMode === "doubles") ? "doubles" : "singles"; // default to singles rank
+        
+        // Sort by rating descending to compute the true rank
+        let ranked = [...rows].sort((a, b) => b[rankField] - a[rankField]);
+        
+        // Assign rank numbers
+        ranked.forEach((player, i) => {
+            player.rank = i + 1;
+        });
+        
+        // ------------------ POPULATE TABLE -----------------------
+        tbody.innerHTML = "";
+        ranked.forEach(p => {
+            const tr = document.createElement("tr");
+        
+            const singlesColor = ratingColor(p.singles);
+            const doublesColor = ratingColor(p.doubles);
+        
+            tr.innerHTML = `
+                <td>${p.rank}</td>
+                <td style="cursor:pointer" onclick="showPlayer('${p.name}')">${p.name}</td>
+                <td style="display:${currentMode === 'doubles' ? 'none' : 'table-cell'}; color:${singlesColor}">
+                    ${p.singles.toFixed(1)}
+                </td>
+                <td style="display:${currentMode === 'singles' ? 'none' : 'table-cell'}; color:${doublesColor}">
+                    ${p.doubles.toFixed(1)}
+                </td>
+            `;
+        
+            tbody.appendChild(tr);
+});
 
-        const singlesColor = ratingColor(p.singles);
-        const doublesColor = ratingColor(p.doubles);
 
-        tr.innerHTML = `
-            <td style="cursor:pointer" onclick="showPlayer('${p.name}')">${p.name}</td>
-            <td style="display:${currentMode === 'doubles' ? 'none' : 'table-cell'}; color:${singlesColor}">
-                ${p.singles.toFixed(1)}
-            </td>
-            <td style="display:${currentMode === 'singles' ? 'none' : 'table-cell'}; color:${doublesColor}">
-                ${p.doubles.toFixed(1)}
-            </td>
-        `;
 
-        tbody.appendChild(tr);
+        
     });
 }
 
