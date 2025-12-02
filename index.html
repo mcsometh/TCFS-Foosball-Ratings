@@ -227,17 +227,29 @@ function renderTable() {
 
     // ------------------ RANKING MAP -----------------------
     // Decide which rating field defines rank
-    let rankField =
-        currentMode === "singles" ? "singles" :
-        currentMode === "doubles" ? "doubles" :
-        "singles"; // default rank in "all" mode
-
-    // Compute rank by sorting descending on rankField
+    // ------------------ RANKING LOGIC -----------------------
+    let rankField;
+    
+    // If user is sorting by singles/doubles, rank should follow that.
+    if (sortField === "singles") rankField = "singles";
+    else if (sortField === "doubles") rankField = "doubles";
+    
+    // Otherwise ranking depends on current mode
+    else {
+        rankField =
+            currentMode === "singles" ? "singles" :
+            currentMode === "doubles" ? "doubles" :
+            "singles"; // default rank in "all" mode
+    }
+    
+    // Compute rank using chosen field
     let rankedForRank = [...rows].sort((a, b) => b[rankField] - a[rankField]);
+    
     let rankByName = {};
     rankedForRank.forEach((p, i) => {
         rankByName[p.name] = i + 1;
     });
+
 
     // ------------------ APPLY SORTING FOR DISPLAY -----------------------
     rows.sort((a, b) => {
