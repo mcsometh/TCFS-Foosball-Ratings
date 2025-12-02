@@ -198,6 +198,7 @@ function renderTable() {
 
     let search = document.getElementById("searchBox").value.toLowerCase();
 
+    // Build row list
     let rows = Object.entries(players).map(([name, vals]) => ({
         name,
         singles: vals.singles,
@@ -206,33 +207,67 @@ function renderTable() {
         doubles_games: vals.doubles_games
     }));
 
-    // search filter
+    // Search filter
     rows = rows.filter(r => r.name.toLowerCase().includes(search));
 
-    // mode filter
-    if (currentMode === "singles") {
-        rows = rows.filter(r => r.singles_games > 0);
-    }
-    if (currentMode === "doubles") {
-        rows = rows.filter(r => r.doubles_games > 0);
-    }
+    // Mode filter
+    if (currentMode === "singles") rows = rows.filter(r => r.singles_games > 0);
+    if (currentMode === "doubles") rows = rows.filter(r => r.doubles_games > 0);
 
-    // hide columns
+    // Hide unused columns
     document.getElementById("thSingles").style.display =
         currentMode === "doubles" ? "none" : "";
     document.getElementById("thDoubles").style.display =
         currentMode === "singles" ? "none" : "";
 
-    // sort rows
+    // General sorting (by player, singles, doubles, or rank)
     rows.sort((a, b) => {
         if (sortField === "player")
             return sortAsc ? a.name.localeCompare(b.name)
                            : b.name.localeCompare(a.name);
 
-        return sortAsc ? a[sortField] - b[sortField]
-                       : b[sortField] - a[sortField];
+        if (sortField === "singles" || sortField === "doubles")
+            return sortAsc ? a[sortField] - b[sortField]
+                           : b[sortField] - a[sortField];
+
+        return 0;
     });
 
+    // ------------------ RANKING -----------------------
+    // Choose rating field for rank calculation
+    let rankField =
+        currentMode === "singles" ? "singles" :
+        currentMode === "doubles" ? "doubles" :
+        "singles"; // default rank when showing all
+
+    // Sort for rank (always descending by rating)
+    let ranked = [...rows].sort((a, b) => b[rankField] - a[rankField]);
+
+    // Assign rank numbers
+    ranked.forEach((p, i) => p.rank = i + 1);
+
+    // ------------------ RENDER TABLE -----------------------
+    tbody.innerHTML = "";
+
+    ranked.forEach(p => {
+        const tr = document.createElement("tr");
+        const singlesColor = ratingColor(p.singles);
+        const doublesColor = ratingColor(p.doubles);
+
+        tr.innerHTML = `
+            <td>${p.rank}</td>
+            <td style="cursor:pointer" onclick="showPlayer('${p.name}')">${p.name}</td>
+            <td style="display:${currentMode === 'doubles' ? 'none' : 'table-cell'}; color:${singlesColor}">
+                ${p.singles.toFixed(1)}
+            </td>
+            <td style="display:${currentMode === 'singles' ? 'none' : 'table-cell'}; color:${doublesColor}">
+                ${p.doubles.toFixed(1)}
+            </td>
+        `;
+
+        tbody.appendChild(tr);
+    });
+}
     // populate table
     rows.forEach(p => {
                 // ------------------ RANKING LOGIC -----------------------
@@ -268,10 +303,7 @@ function renderTable() {
         
             tbody.appendChild(tr);
 });
-
-
-
-        
+       
     });
 }
 
