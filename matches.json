@@ -2230,5 +2230,45 @@
     "team2": "Emiliano",
     "score1": 7,
     "score2": 5
+  },
+  {
+    "timestamp": "2025-12-03 02:10:55",
+    "mode": "singles",
+    "team1": "Hercules",
+    "team2": "Indigo",
+    "score1": 7,
+    "score2": 5
+  },
+  {
+    "timestamp": "2025-12-03 02:11:15",
+    "mode": "singles",
+    "team1": "William",
+    "team2": "Indigo",
+    "score1": 7,
+    "score2": 4
+  },
+  {
+    "timestamp": "2025-12-03 02:11:28",
+    "mode": "singles",
+    "team1": "William",
+    "team2": "Nola",
+    "score1": 7,
+    "score2": 3
+  },
+  {
+    "timestamp": "2025-12-03 02:11:43",
+    "mode": "singles",
+    "team1": "Misha",
+    "team2": "Monty",
+    "score1": 7,
+    "score2": 1
+  },
+  {
+    "timestamp": "2025-12-03 02:11:54",
+    "mode": "singles",
+    "team1": "Timur",
+    "team2": "Monty",
+    "score1": 7,
+    "score2": 2
   }
 ]
