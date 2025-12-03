@@ -1,15 +1,15 @@
 {
   "Hercules": {
     "singles": 1824.216428808885,
-    "doubles": 2030.57659867974,
+    "doubles": 2049.1920781788667,
     "singles_games": 15,
-    "doubles_games": 61
+    "doubles_games": 67
   },
   "Indigo": {
     "singles": 1511.4908744151467,
-    "doubles": 1732.6667051811894,
+    "doubles": 1777.8715699976037,
     "singles_games": 7,
-    "doubles_games": 4
+    "doubles_games": 10
   },
   "Barry": {
     "singles": 1500,
@@ -25,9 +25,9 @@
   },
   "Monty": {
     "singles": 1408.694905934757,
-    "doubles": 1221.3879743099758,
+    "doubles": 1188.7109263410432,
     "singles_games": 17,
-    "doubles_games": 46
+    "doubles_games": 50
   },
   "William": {
     "singles": 1738.0291752951694,
@@ -37,9 +37,9 @@
   },
   "Sahej": {
     "singles": 1500,
-    "doubles": 1256.8670859818262,
+    "doubles": 1253.8495272597534,
     "singles_games": 0,
-    "doubles_games": 16
+    "doubles_games": 17
   },
   "Ben": {
     "singles": 1500,
@@ -55,21 +55,21 @@
   },
   "Misha": {
     "singles": 1675.1168470016476,
-    "doubles": 1675.9213116111257,
+    "doubles": 1715.7953536353969,
     "singles_games": 10,
-    "doubles_games": 50
+    "doubles_games": 56
   },
   "Ed": {
     "singles": 1500,
-    "doubles": 1324.2305554644354,
+    "doubles": 1283.1286325378596,
     "singles_games": 0,
-    "doubles_games": 12
+    "doubles_games": 16
   },
   "Nola": {
     "singles": 1535.246035884082,
-    "doubles": 1319.980230691613,
+    "doubles": 1317.0112748996028,
     "singles_games": 10,
-    "doubles_games": 56
+    "doubles_games": 62
   },
   "Sehon": {
     "singles": 1364.0340547528872,
@@ -79,9 +79,9 @@
   },
   "Timur": {
     "singles": 1460.9487588299712,
-    "doubles": 1529.3951732434953,
+    "doubles": 1521.6682740894407,
     "singles_games": 6,
-    "doubles_games": 7
+    "doubles_games": 8
   },
   "Sounak": {
     "singles": 1500,
@@ -163,9 +163,9 @@
   },
   "Arjun": {
     "singles": 1460.8675380209947,
-    "doubles": 1349.0742610890625,
+    "doubles": 1335.2080636048443,
     "singles_games": 1,
-    "doubles_games": 6
+    "doubles_games": 12
   },
   "Gabriel": {
     "singles": 1356.4967339100413,
@@ -190,5 +190,17 @@
     "doubles": 1360.8881759430672,
     "singles_games": 0,
     "doubles_games": 3
+  },
+  "Hayden": {
+    "singles": 1500,
+    "doubles": 1555.6420530099397,
+    "singles_games": 0,
+    "doubles_games": 2
+  },
+  "Thomas": {
+    "singles": 1500,
+    "doubles": 1461.0794773593418,
+    "singles_games": 0,
+    "doubles_games": 2
   }
 }
