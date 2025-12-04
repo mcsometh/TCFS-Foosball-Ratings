@@ -146,6 +146,7 @@
 // ------------------ GLOBALS -----------------------
 let players = {};
 let historyData = [];
+let matches = [];
 let currentMode = "all";     // "all", "singles", "doubles"
 let sortField = "player";    // "rank", "player", "singles", "doubles"
 let sortAsc = true;
@@ -155,6 +156,7 @@ let chart;
 async function loadData() {
     players = await fetch("players.json?" + Date.now()).then(r => r.json());
     historyData = await fetch("history.json?" + Date.now()).then(r => r.json());
+    matches = await fetch("matches.json?" + Date.now()).then(r => r.json());
     renderTable();
 }
 
@@ -201,24 +203,41 @@ function changeColor(delta) {
 }
 
 // ------------------ COMPUTE ELO CHANGE OVER LAST 10 GAMES -----------------------
-function computeLast10Change(playerName, mode) {
-    let values = [];
+function computeLast10ModeChange(playerName, mode) {
 
-    // Extract rating progression for the chosen mode
-    historyData.forEach(snapshot => {
-        if (snapshot[playerName]) {
-            values.push(snapshot[playerName][mode]);
+    // 1. Collect indices of matches where this player played in the selected mode
+    let matchIndices = [];
+    matches.forEach((m, idx) => {
+
+        if (m.mode !== mode) return;
+
+        if (mode === "singles") {
+            if (m.team1 === playerName || m.team2 === playerName) {
+                matchIndices.push(idx);
+            }
+        }
+
+        if (mode === "doubles") {
+            if (Array.isArray(m.team1) && m.team1.includes(playerName)) matchIndices.push(idx);
+            if (Array.isArray(m.team2) && m.team2.includes(playerName)) matchIndices.push(idx);
         }
     });
 
-    if (values.length < 2) return 0;
+    // Need at least 2 matches
+    if (matchIndices.length < 2) return 0;
 
-    // Last value minus value 10 games ago (or earliest if fewer)
-    let last = values[values.length - 1];
-    let idx = Math.max(0, values.length - 11);
-    let old = values[idx];
+    // Take last 10 indices (or fewer if not available)
+    let lastTen = matchIndices.slice(-10);
 
-    return last - old;
+    // 2. Extract ratings from history snapshots corresponding to those matches
+    let ratings = lastTen.map(i => historyData[i][playerName][mode]);
+
+    if (ratings.length < 2) return 0;
+
+    let first = ratings[0];
+    let last = ratings[ratings.length - 1];
+
+    return last - first;
 }
 
 
@@ -314,8 +333,8 @@ function renderTable() {
         const doublesColor = ratingColor(p.doubles);
         const rank = rankByName[p.name] ?? "";
 
-        let deltaSingles = computeLast10Change(p.name, "singles");
-        let deltaDoubles = computeLast10Change(p.name, "doubles");
+        let deltaSingles = computeLast10ModeChange(p.name, "singles");
+        let deltaDoubles = computeLast10ModeChange(p.name, "doubles");
 
         let ds = deltaSingles === 0 ? "(0)" :
                  deltaSingles > 0 ? `(+${deltaSingles.toFixed(1)})` :
