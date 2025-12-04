@@ -200,11 +200,11 @@ function changeColor(delta) {
     return "rgb(180,180,180)";                // grey
 }
 
-// ------------------ COMPUTE ELO CHANGE OVER LAST 5 GAMES -----------------------
-function computeLast5Change(playerName, mode) {
+// ------------------ COMPUTE ELO CHANGE OVER LAST 10 GAMES -----------------------
+function computeLast10Change(playerName, mode) {
     let values = [];
 
-    // Extract the rating progression for the chosen mode
+    // Extract rating progression for the chosen mode
     historyData.forEach(snapshot => {
         if (snapshot[playerName]) {
             values.push(snapshot[playerName][mode]);
@@ -213,13 +213,14 @@ function computeLast5Change(playerName, mode) {
 
     if (values.length < 2) return 0;
 
-    // Last value minus value 5 games ago (or earliest if fewer)
+    // Last value minus value 10 games ago (or earliest if fewer)
     let last = values[values.length - 1];
-    let idx = Math.max(0, values.length - 6);
+    let idx = Math.max(0, values.length - 11);
     let old = values[idx];
 
     return last - old;
 }
+
 
 function renderTable() {
     const tbody = document.querySelector("#eloTable tbody");
@@ -254,9 +255,8 @@ function renderTable() {
     thDoubles.style.display = currentMode === "singles" ? "none" : "";
     
     // Update column headers to indicate last-5-game change
-    thSingles.innerText = "Singles (last 5)";
-    thDoubles.innerText = "Doubles (last 5)";
-
+    thSingles.innerText = "Singles (last 10)";
+    thDoubles.innerText = "Doubles (last 10)";
 
     // ------------------ RANKING MAP -----------------------
     // Decide which rating field defines rank
@@ -314,9 +314,9 @@ function renderTable() {
         const doublesColor = ratingColor(p.doubles);
         const rank = rankByName[p.name] ?? "";
 
-        let deltaSingles = computeLast5Change(p.name, "singles");
-        let deltaDoubles = computeLast5Change(p.name, "doubles");
-        
+        let deltaSingles = computeLast10Change(p.name, "singles");
+        let deltaDoubles = computeLast10Change(p.name, "doubles");
+
         let ds = deltaSingles === 0 ? "(0)" :
                  deltaSingles > 0 ? `(+${deltaSingles.toFixed(1)})` :
                                     `(${deltaSingles.toFixed(1)})`;
