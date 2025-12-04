@@ -194,6 +194,33 @@ function ratingColor(value) {
 }
 
 // ------------------ TABLE RENDERING -----------------------
+function changeColor(delta) {
+    if (delta > 0) return "rgb(0,200,0)";     // green
+    if (delta < 0) return "rgb(220,0,0)";     // red
+    return "rgb(180,180,180)";                // grey
+}
+
+// ------------------ COMPUTE ELO CHANGE OVER LAST 5 GAMES -----------------------
+function computeLast5Change(playerName, mode) {
+    let values = [];
+
+    // Extract the rating progression for the chosen mode
+    historyData.forEach(snapshot => {
+        if (snapshot[playerName]) {
+            values.push(snapshot[playerName][mode]);
+        }
+    });
+
+    if (values.length < 2) return 0;
+
+    // Last value minus value 5 games ago (or earliest if fewer)
+    let last = values[values.length - 1];
+    let idx = Math.max(0, values.length - 6);
+    let old = values[idx];
+
+    return last - old;
+}
+
 function renderTable() {
     const tbody = document.querySelector("#eloTable tbody");
     tbody.innerHTML = "";
@@ -220,10 +247,16 @@ function renderTable() {
     }
 
     // Show/hide rating columns in header
-    document.getElementById("thSingles").style.display =
-        currentMode === "doubles" ? "none" : "";
-    document.getElementById("thDoubles").style.display =
-        currentMode === "singles" ? "none" : "";
+    let thSingles = document.getElementById("thSingles");
+    let thDoubles = document.getElementById("thDoubles");
+    
+    thSingles.style.display = currentMode === "doubles" ? "none" : "";
+    thDoubles.style.display = currentMode === "singles" ? "none" : "";
+    
+    // Update column headers to indicate last-5-game change
+    thSingles.innerText = "Singles (last 5)";
+    thDoubles.innerText = "Doubles (last 5)";
+
 
     // ------------------ RANKING MAP -----------------------
     // Decide which rating field defines rank
@@ -281,17 +314,34 @@ function renderTable() {
         const doublesColor = ratingColor(p.doubles);
         const rank = rankByName[p.name] ?? "";
 
+        let deltaSingles = computeLast5Change(p.name, "singles");
+        let deltaDoubles = computeLast5Change(p.name, "doubles");
+        
+        let ds = deltaSingles === 0 ? "(0)" :
+                 deltaSingles > 0 ? `(+${deltaSingles.toFixed(1)})` :
+                                    `(${deltaSingles.toFixed(1)})`;
+        
+        let dd = deltaDoubles === 0 ? "(0)" :
+                 deltaDoubles > 0 ? `(+${deltaDoubles.toFixed(1)})` :
+                                    `(${deltaDoubles.toFixed(1)})`;
+        
+        let dsColor = changeColor(deltaSingles);
+        let ddColor = changeColor(deltaDoubles);
+        
         tr.innerHTML = `
             <td>${rank}</td>
             <td style="cursor:pointer" onclick="showPlayer('${p.name}')">${p.name}</td>
-            <td style="display:${currentMode === 'doubles' ? 'none' : 'table-cell'}; color:${singlesColor}">
+        
+            <td style="display:${currentMode === 'doubles' ? 'none' : 'table-cell'}; color:${ratingColor(p.singles)}">
                 ${p.singles.toFixed(1)}
+                <span style="color:${dsColor}"> ${ds}</span>
             </td>
-            <td style="display:${currentMode === 'singles' ? 'none' : 'table-cell'}; color:${doublesColor}">
+        
+            <td style="display:${currentMode === 'singles' ? 'none' : 'table-cell'}; color:${ratingColor(p.doubles)}">
                 ${p.doubles.toFixed(1)}
+                <span style="color:${ddColor}"> ${dd}</span>
             </td>
         `;
-
         tbody.appendChild(tr);
     });
 }
