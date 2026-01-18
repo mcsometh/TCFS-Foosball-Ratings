@@ -1,9 +1,9 @@
 {
   "Hercules": {
     "singles": 1844.4241971505662,
-    "doubles": 2076.011839671431,
+    "doubles": 2130.045728769428,
     "singles_games": 17,
-    "doubles_games": 69
+    "doubles_games": 76
   },
   "Indigo": {
     "singles": 1531.5595303265993,
@@ -25,9 +25,9 @@
   },
   "Monty": {
     "singles": 1408.694905934757,
-    "doubles": 1188.7109263410432,
+    "doubles": 1316.179974048092,
     "singles_games": 17,
-    "doubles_games": 50
+    "doubles_games": 57
   },
   "William": {
     "singles": 1738.0291752951694,
@@ -55,21 +55,21 @@
   },
   "Misha": {
     "singles": 1675.1168470016476,
-    "doubles": 1715.7953536353969,
+    "doubles": 1720.0667972002207,
     "singles_games": 10,
-    "doubles_games": 56
+    "doubles_games": 63
   },
   "Ed": {
     "singles": 1500,
-    "doubles": 1283.1286325378596,
+    "doubles": 1286.1782048323696,
     "singles_games": 0,
-    "doubles_games": 16
+    "doubles_games": 22
   },
   "Nola": {
     "singles": 1535.246035884082,
-    "doubles": 1317.0112748996028,
+    "doubles": 1320.8348187089096,
     "singles_games": 10,
-    "doubles_games": 62
+    "doubles_games": 70
   },
   "Sehon": {
     "singles": 1364.0340547528872,
@@ -151,9 +151,9 @@
   },
   "Samuel": {
     "singles": 1221.6797724175108,
-    "doubles": 1218.6327259189097,
+    "doubles": 1136.6278566086798,
     "singles_games": 7,
-    "doubles_games": 20
+    "doubles_games": 27
   },
   "Sophia": {
     "singles": 1500,
@@ -163,9 +163,9 @@
   },
   "Arjun": {
     "singles": 1460.8675380209947,
-    "doubles": 1335.2080636048443,
+    "doubles": 1336.7129679118598,
     "singles_games": 1,
-    "doubles_games": 12
+    "doubles_games": 19
   },
   "Gabriel": {
     "singles": 1356.4967339100413,
@@ -220,5 +220,11 @@
     "doubles": 1576.3774688832239,
     "singles_games": 0,
     "doubles_games": 2
+  },
+  "Owen": {
+    "singles": 1500,
+    "doubles": 1316.1290163742467,
+    "singles_games": 0,
+    "doubles_games": 7
   }
 }
