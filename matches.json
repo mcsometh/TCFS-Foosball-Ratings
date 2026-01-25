@@ -2506,21 +2506,6 @@
     "score2": 2
   },
   {
-    "timestamp": "2026-01-18 19:08:01",
-    "mode": "doubles",
-    "team1": [
-      "Nola",
-      "Monty"
-    ],
-    "team2": [
-      "Samuel",
-      "Misha"
-    ],
-    "score1": 7,
-    "score2": 5,
-    "source": "mydp_import"
-  },
-  {
     "timestamp": "2026-01-18 19:18:18",
     "mode": "doubles",
     "team1": [
@@ -2738,5 +2723,19 @@
     "team2": "Hercules",
     "score1": 3,
     "score2": 5
+  },
+  {
+    "timestamp": "2026-01-25 23:29:46",
+    "mode": "doubles",
+    "team1": [
+      "Monty",
+      "Nola"
+    ],
+    "team2": [
+      "Samuel",
+      "Misha"
+    ],
+    "score1": 5,
+    "score2": 7
   }
 ]
