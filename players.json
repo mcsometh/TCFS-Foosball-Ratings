@@ -60,9 +60,9 @@
     "doubles_games": 63
   },
   "Ed": {
-    "singles": 1500,
+    "singles": 1480.9711038184753,
     "doubles": 1211.8341539138378,
-    "singles_games": 0,
+    "singles_games": 2,
     "doubles_games": 25
   },
   "Nola": {
@@ -232,5 +232,11 @@
     "doubles": 1424.233628052008,
     "singles_games": 0,
     "doubles_games": 1
+  },
+  "Lydia": {
+    "singles": 1519.0288961815247,
+    "doubles": 1500,
+    "singles_games": 2,
+    "doubles_games": 0
   }
 }
