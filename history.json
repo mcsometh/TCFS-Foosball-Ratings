@@ -53238,5 +53238,1457 @@
       "singles_games": 2,
       "doubles_games": 0
     }
+  },
+  {
+    "Hercules": {
+      "singles": 1803.4568410653728,
+      "doubles": 2167.4702787946653,
+      "singles_games": 19,
+      "doubles_games": 81
+    },
+    "Indigo": {
+      "singles": 1531.5595303265993,
+      "doubles": 1783.005188707996,
+      "singles_games": 9,
+      "doubles_games": 14
+    },
+    "Barry": {
+      "singles": 1500,
+      "doubles": 1391.5600033189028,
+      "singles_games": 0,
+      "doubles_games": 24
+    },
+    "HoiHin": {
+      "singles": 1500,
+      "doubles": 1506.7543026763055,
+      "singles_games": 0,
+      "doubles_games": 6
+    },
+    "Monty": {
+      "singles": 1484.7998305881745,
+      "doubles": 1352.4261987605348,
+      "singles_games": 20,
+      "doubles_games": 63
+    },
+    "William": {
+      "singles": 1738.0291752951694,
+      "doubles": 1775.9255511165231,
+      "singles_games": 10,
+      "doubles_games": 13
+    },
+    "Sahej": {
+      "singles": 1500,
+      "doubles": 1236.479949398342,
+      "singles_games": 0,
+      "doubles_games": 22
+    },
+    "Ben": {
+      "singles": 1500,
+      "doubles": 1393.5213902851908,
+      "singles_games": 0,
+      "doubles_games": 15
+    },
+    "Morgan": {
+      "singles": 1500,
+      "doubles": 1542.01210536075,
+      "singles_games": 0,
+      "doubles_games": 1
+    },
+    "Misha": {
+      "singles": 1675.1168470016476,
+      "doubles": 1774.6591647712382,
+      "singles_games": 10,
+      "doubles_games": 64
+    },
+    "Ed": {
+      "singles": 1480.9711038184753,
+      "doubles": 1211.8341539138378,
+      "singles_games": 2,
+      "doubles_games": 25
+    },
+    "Nola": {
+      "singles": 1500.1084673158578,
+      "doubles": 1377.0298473448236,
+      "singles_games": 11,
+      "doubles_games": 76
+    },
+    "Sehon": {
+      "singles": 1364.0340547528872,
+      "doubles": 1560.99388043835,
+      "singles_games": 4,
+      "doubles_games": 35
+    },
+    "Timur": {
+      "singles": 1460.9487588299712,
+      "doubles": 1521.6682740894407,
+      "singles_games": 6,
+      "doubles_games": 8
+    },
+    "Sounak": {
+      "singles": 1500,
+      "doubles": 1319.7522565334723,
+      "singles_games": 0,
+      "doubles_games": 6
+    },
+    "Evan": {
+      "singles": 1543.7741658641546,
+      "doubles": 1516.8900921068248,
+      "singles_games": 1,
+      "doubles_games": 7
+    },
+    "Emiliano": {
+      "singles": 1499.373098622374,
+      "doubles": 1664.063904872693,
+      "singles_games": 2,
+      "doubles_games": 27
+    },
+    "Hao": {
+      "singles": 1500,
+      "doubles": 1476.6283483300897,
+      "singles_games": 0,
+      "doubles_games": 10
+    },
+    "Nicole": {
+      "singles": 1500,
+      "doubles": 1554.5800964094917,
+      "singles_games": 0,
+      "doubles_games": 9
+    },
+    "Alex ": {
+      "singles": 1500,
+      "doubles": 1622.7454424915134,
+      "singles_games": 0,
+      "doubles_games": 6
+    },
+    "Aiden": {
+      "singles": 1500,
+      "doubles": 1406.81936801302,
+      "singles_games": 0,
+      "doubles_games": 10
+    },
+    "Martin": {
+      "singles": 1500,
+      "doubles": 1531.4790327205537,
+      "singles_games": 0,
+      "doubles_games": 10
+    },
+    "Archie": {
+      "singles": 1444.7624324308456,
+      "doubles": 1185.0368584805165,
+      "singles_games": 1,
+      "doubles_games": 15
+    },
+    "Fergus": {
+      "singles": 1393.6410548338752,
+      "doubles": 1574.6668261641732,
+      "singles_games": 5,
+      "doubles_games": 7
+    },
+    "Jeremy": {
+      "singles": 1500,
+      "doubles": 1476.7022922086114,
+      "singles_games": 0,
+      "doubles_games": 6
+    },
+    "Samuel": {
+      "singles": 1221.6797724175108,
+      "doubles": 1230.5262121579246,
+      "singles_games": 7,
+      "doubles_games": 30
+    },
+    "Sophia": {
+      "singles": 1500,
+      "doubles": 1508.204405346108,
+      "singles_games": 0,
+      "doubles_games": 5
+    },
+    "Arjun": {
+      "singles": 1460.8675380209947,
+      "doubles": 1303.9013080075,
+      "singles_games": 1,
+      "doubles_games": 22
+    },
+    "Gabriel": {
+      "singles": 1356.4967339100413,
+      "doubles": 1446.3604770148704,
+      "singles_games": 2,
+      "doubles_games": 2
+    },
+    "Ayan": {
+      "singles": 1394.8479202911403,
+      "doubles": 1500,
+      "singles_games": 2,
+      "doubles_games": 0
+    },
+    "Rishi": {
+      "singles": 1500,
+      "doubles": 1623.0779440031708,
+      "singles_games": 0,
+      "doubles_games": 7
+    },
+    "Luke": {
+      "singles": 1500,
+      "doubles": 1360.8881759430672,
+      "singles_games": 0,
+      "doubles_games": 3
+    },
+    "Hayden": {
+      "singles": 1500,
+      "doubles": 1555.6420530099397,
+      "singles_games": 0,
+      "doubles_games": 2
+    },
+    "Thomas": {
+      "singles": 1500,
+      "doubles": 1461.0794773593418,
+      "singles_games": 0,
+      "doubles_games": 2
+    },
+    "Alex Zhou": {
+      "singles": 1500,
+      "doubles": 1477.2620541019057,
+      "singles_games": 0,
+      "doubles_games": 2
+    },
+    "Alex Mirzoyan": {
+      "singles": 1419.4471514937322,
+      "doubles": 1433.436960546135,
+      "singles_games": 2,
+      "doubles_games": 2
+    },
+    "Leo": {
+      "singles": 1500,
+      "doubles": 1576.3774688832239,
+      "singles_games": 0,
+      "doubles_games": 2
+    },
+    "Owen": {
+      "singles": 1500,
+      "doubles": 1245.7639553381646,
+      "singles_games": 0,
+      "doubles_games": 12
+    },
+    "Nico": {
+      "singles": 1500,
+      "doubles": 1424.233628052008,
+      "singles_games": 0,
+      "doubles_games": 1
+    },
+    "Lydia": {
+      "singles": 1519.0288961815247,
+      "doubles": 1500,
+      "singles_games": 2,
+      "doubles_games": 0
+    }
+  },
+  {
+    "Hercules": {
+      "singles": 1803.4568410653728,
+      "doubles": 2131.577587864897,
+      "singles_games": 19,
+      "doubles_games": 82
+    },
+    "Indigo": {
+      "singles": 1531.5595303265993,
+      "doubles": 1783.005188707996,
+      "singles_games": 9,
+      "doubles_games": 14
+    },
+    "Barry": {
+      "singles": 1500,
+      "doubles": 1391.5600033189028,
+      "singles_games": 0,
+      "doubles_games": 24
+    },
+    "HoiHin": {
+      "singles": 1500,
+      "doubles": 1506.7543026763055,
+      "singles_games": 0,
+      "doubles_games": 6
+    },
+    "Monty": {
+      "singles": 1484.7998305881745,
+      "doubles": 1352.4261987605348,
+      "singles_games": 20,
+      "doubles_games": 63
+    },
+    "William": {
+      "singles": 1738.0291752951694,
+      "doubles": 1775.9255511165231,
+      "singles_games": 10,
+      "doubles_games": 13
+    },
+    "Sahej": {
+      "singles": 1500,
+      "doubles": 1236.479949398342,
+      "singles_games": 0,
+      "doubles_games": 22
+    },
+    "Ben": {
+      "singles": 1500,
+      "doubles": 1393.5213902851908,
+      "singles_games": 0,
+      "doubles_games": 15
+    },
+    "Morgan": {
+      "singles": 1500,
+      "doubles": 1542.01210536075,
+      "singles_games": 0,
+      "doubles_games": 1
+    },
+    "Misha": {
+      "singles": 1675.1168470016476,
+      "doubles": 1810.5518557010064,
+      "singles_games": 10,
+      "doubles_games": 65
+    },
+    "Ed": {
+      "singles": 1480.9711038184753,
+      "doubles": 1211.8341539138378,
+      "singles_games": 2,
+      "doubles_games": 25
+    },
+    "Nola": {
+      "singles": 1500.1084673158578,
+      "doubles": 1412.9225382745917,
+      "singles_games": 11,
+      "doubles_games": 77
+    },
+    "Sehon": {
+      "singles": 1364.0340547528872,
+      "doubles": 1560.99388043835,
+      "singles_games": 4,
+      "doubles_games": 35
+    },
+    "Timur": {
+      "singles": 1460.9487588299712,
+      "doubles": 1521.6682740894407,
+      "singles_games": 6,
+      "doubles_games": 8
+    },
+    "Sounak": {
+      "singles": 1500,
+      "doubles": 1319.7522565334723,
+      "singles_games": 0,
+      "doubles_games": 6
+    },
+    "Evan": {
+      "singles": 1543.7741658641546,
+      "doubles": 1516.8900921068248,
+      "singles_games": 1,
+      "doubles_games": 7
+    },
+    "Emiliano": {
+      "singles": 1499.373098622374,
+      "doubles": 1664.063904872693,
+      "singles_games": 2,
+      "doubles_games": 27
+    },
+    "Hao": {
+      "singles": 1500,
+      "doubles": 1476.6283483300897,
+      "singles_games": 0,
+      "doubles_games": 10
+    },
+    "Nicole": {
+      "singles": 1500,
+      "doubles": 1554.5800964094917,
+      "singles_games": 0,
+      "doubles_games": 9
+    },
+    "Alex ": {
+      "singles": 1500,
+      "doubles": 1622.7454424915134,
+      "singles_games": 0,
+      "doubles_games": 6
+    },
+    "Aiden": {
+      "singles": 1500,
+      "doubles": 1406.81936801302,
+      "singles_games": 0,
+      "doubles_games": 10
+    },
+    "Martin": {
+      "singles": 1500,
+      "doubles": 1531.4790327205537,
+      "singles_games": 0,
+      "doubles_games": 10
+    },
+    "Archie": {
+      "singles": 1444.7624324308456,
+      "doubles": 1185.0368584805165,
+      "singles_games": 1,
+      "doubles_games": 15
+    },
+    "Fergus": {
+      "singles": 1393.6410548338752,
+      "doubles": 1574.6668261641732,
+      "singles_games": 5,
+      "doubles_games": 7
+    },
+    "Jeremy": {
+      "singles": 1500,
+      "doubles": 1476.7022922086114,
+      "singles_games": 0,
+      "doubles_games": 6
+    },
+    "Samuel": {
+      "singles": 1221.6797724175108,
+      "doubles": 1230.5262121579246,
+      "singles_games": 7,
+      "doubles_games": 30
+    },
+    "Sophia": {
+      "singles": 1500,
+      "doubles": 1508.204405346108,
+      "singles_games": 0,
+      "doubles_games": 5
+    },
+    "Arjun": {
+      "singles": 1460.8675380209947,
+      "doubles": 1303.9013080075,
+      "singles_games": 1,
+      "doubles_games": 22
+    },
+    "Gabriel": {
+      "singles": 1356.4967339100413,
+      "doubles": 1446.3604770148704,
+      "singles_games": 2,
+      "doubles_games": 2
+    },
+    "Ayan": {
+      "singles": 1394.8479202911403,
+      "doubles": 1500,
+      "singles_games": 2,
+      "doubles_games": 0
+    },
+    "Rishi": {
+      "singles": 1500,
+      "doubles": 1623.0779440031708,
+      "singles_games": 0,
+      "doubles_games": 7
+    },
+    "Luke": {
+      "singles": 1500,
+      "doubles": 1360.8881759430672,
+      "singles_games": 0,
+      "doubles_games": 3
+    },
+    "Hayden": {
+      "singles": 1500,
+      "doubles": 1555.6420530099397,
+      "singles_games": 0,
+      "doubles_games": 2
+    },
+    "Thomas": {
+      "singles": 1500,
+      "doubles": 1461.0794773593418,
+      "singles_games": 0,
+      "doubles_games": 2
+    },
+    "Alex Zhou": {
+      "singles": 1500,
+      "doubles": 1477.2620541019057,
+      "singles_games": 0,
+      "doubles_games": 2
+    },
+    "Alex Mirzoyan": {
+      "singles": 1419.4471514937322,
+      "doubles": 1433.436960546135,
+      "singles_games": 2,
+      "doubles_games": 2
+    },
+    "Leo": {
+      "singles": 1500,
+      "doubles": 1576.3774688832239,
+      "singles_games": 0,
+      "doubles_games": 2
+    },
+    "Owen": {
+      "singles": 1500,
+      "doubles": 1209.8712644083964,
+      "singles_games": 0,
+      "doubles_games": 13
+    },
+    "Nico": {
+      "singles": 1500,
+      "doubles": 1424.233628052008,
+      "singles_games": 0,
+      "doubles_games": 1
+    },
+    "Lydia": {
+      "singles": 1519.0288961815247,
+      "doubles": 1500,
+      "singles_games": 2,
+      "doubles_games": 0
+    }
+  },
+  {
+    "Hercules": {
+      "singles": 1803.4568410653728,
+      "doubles": 2140.273931565836,
+      "singles_games": 19,
+      "doubles_games": 83
+    },
+    "Indigo": {
+      "singles": 1531.5595303265993,
+      "doubles": 1783.005188707996,
+      "singles_games": 9,
+      "doubles_games": 14
+    },
+    "Barry": {
+      "singles": 1500,
+      "doubles": 1391.5600033189028,
+      "singles_games": 0,
+      "doubles_games": 24
+    },
+    "HoiHin": {
+      "singles": 1500,
+      "doubles": 1506.7543026763055,
+      "singles_games": 0,
+      "doubles_games": 6
+    },
+    "Monty": {
+      "singles": 1484.7998305881745,
+      "doubles": 1352.4261987605348,
+      "singles_games": 20,
+      "doubles_games": 63
+    },
+    "William": {
+      "singles": 1738.0291752951694,
+      "doubles": 1775.9255511165231,
+      "singles_games": 10,
+      "doubles_games": 13
+    },
+    "Sahej": {
+      "singles": 1500,
+      "doubles": 1236.479949398342,
+      "singles_games": 0,
+      "doubles_games": 22
+    },
+    "Ben": {
+      "singles": 1500,
+      "doubles": 1393.5213902851908,
+      "singles_games": 0,
+      "doubles_games": 15
+    },
+    "Morgan": {
+      "singles": 1500,
+      "doubles": 1542.01210536075,
+      "singles_games": 0,
+      "doubles_games": 1
+    },
+    "Misha": {
+      "singles": 1675.1168470016476,
+      "doubles": 1801.8555120000672,
+      "singles_games": 10,
+      "doubles_games": 66
+    },
+    "Ed": {
+      "singles": 1480.9711038184753,
+      "doubles": 1211.8341539138378,
+      "singles_games": 2,
+      "doubles_games": 25
+    },
+    "Nola": {
+      "singles": 1500.1084673158578,
+      "doubles": 1421.618881975531,
+      "singles_games": 11,
+      "doubles_games": 78
+    },
+    "Sehon": {
+      "singles": 1364.0340547528872,
+      "doubles": 1560.99388043835,
+      "singles_games": 4,
+      "doubles_games": 35
+    },
+    "Timur": {
+      "singles": 1460.9487588299712,
+      "doubles": 1521.6682740894407,
+      "singles_games": 6,
+      "doubles_games": 8
+    },
+    "Sounak": {
+      "singles": 1500,
+      "doubles": 1319.7522565334723,
+      "singles_games": 0,
+      "doubles_games": 6
+    },
+    "Evan": {
+      "singles": 1543.7741658641546,
+      "doubles": 1516.8900921068248,
+      "singles_games": 1,
+      "doubles_games": 7
+    },
+    "Emiliano": {
+      "singles": 1499.373098622374,
+      "doubles": 1664.063904872693,
+      "singles_games": 2,
+      "doubles_games": 27
+    },
+    "Hao": {
+      "singles": 1500,
+      "doubles": 1476.6283483300897,
+      "singles_games": 0,
+      "doubles_games": 10
+    },
+    "Nicole": {
+      "singles": 1500,
+      "doubles": 1554.5800964094917,
+      "singles_games": 0,
+      "doubles_games": 9
+    },
+    "Alex ": {
+      "singles": 1500,
+      "doubles": 1622.7454424915134,
+      "singles_games": 0,
+      "doubles_games": 6
+    },
+    "Aiden": {
+      "singles": 1500,
+      "doubles": 1406.81936801302,
+      "singles_games": 0,
+      "doubles_games": 10
+    },
+    "Martin": {
+      "singles": 1500,
+      "doubles": 1531.4790327205537,
+      "singles_games": 0,
+      "doubles_games": 10
+    },
+    "Archie": {
+      "singles": 1444.7624324308456,
+      "doubles": 1185.0368584805165,
+      "singles_games": 1,
+      "doubles_games": 15
+    },
+    "Fergus": {
+      "singles": 1393.6410548338752,
+      "doubles": 1574.6668261641732,
+      "singles_games": 5,
+      "doubles_games": 7
+    },
+    "Jeremy": {
+      "singles": 1500,
+      "doubles": 1476.7022922086114,
+      "singles_games": 0,
+      "doubles_games": 6
+    },
+    "Samuel": {
+      "singles": 1221.6797724175108,
+      "doubles": 1230.5262121579246,
+      "singles_games": 7,
+      "doubles_games": 30
+    },
+    "Sophia": {
+      "singles": 1500,
+      "doubles": 1508.204405346108,
+      "singles_games": 0,
+      "doubles_games": 5
+    },
+    "Arjun": {
+      "singles": 1460.8675380209947,
+      "doubles": 1303.9013080075,
+      "singles_games": 1,
+      "doubles_games": 22
+    },
+    "Gabriel": {
+      "singles": 1356.4967339100413,
+      "doubles": 1446.3604770148704,
+      "singles_games": 2,
+      "doubles_games": 2
+    },
+    "Ayan": {
+      "singles": 1394.8479202911403,
+      "doubles": 1500,
+      "singles_games": 2,
+      "doubles_games": 0
+    },
+    "Rishi": {
+      "singles": 1500,
+      "doubles": 1623.0779440031708,
+      "singles_games": 0,
+      "doubles_games": 7
+    },
+    "Luke": {
+      "singles": 1500,
+      "doubles": 1360.8881759430672,
+      "singles_games": 0,
+      "doubles_games": 3
+    },
+    "Hayden": {
+      "singles": 1500,
+      "doubles": 1555.6420530099397,
+      "singles_games": 0,
+      "doubles_games": 2
+    },
+    "Thomas": {
+      "singles": 1500,
+      "doubles": 1461.0794773593418,
+      "singles_games": 0,
+      "doubles_games": 2
+    },
+    "Alex Zhou": {
+      "singles": 1500,
+      "doubles": 1477.2620541019057,
+      "singles_games": 0,
+      "doubles_games": 2
+    },
+    "Alex Mirzoyan": {
+      "singles": 1419.4471514937322,
+      "doubles": 1433.436960546135,
+      "singles_games": 2,
+      "doubles_games": 2
+    },
+    "Leo": {
+      "singles": 1500,
+      "doubles": 1576.3774688832239,
+      "singles_games": 0,
+      "doubles_games": 2
+    },
+    "Owen": {
+      "singles": 1500,
+      "doubles": 1201.1749207074572,
+      "singles_games": 0,
+      "doubles_games": 14
+    },
+    "Nico": {
+      "singles": 1500,
+      "doubles": 1424.233628052008,
+      "singles_games": 0,
+      "doubles_games": 1
+    },
+    "Lydia": {
+      "singles": 1519.0288961815247,
+      "doubles": 1500,
+      "singles_games": 2,
+      "doubles_games": 0
+    }
+  },
+  {
+    "Hercules": {
+      "singles": 1803.4568410653728,
+      "doubles": 2140.273931565836,
+      "singles_games": 19,
+      "doubles_games": 83
+    },
+    "Indigo": {
+      "singles": 1531.5595303265993,
+      "doubles": 1783.005188707996,
+      "singles_games": 9,
+      "doubles_games": 14
+    },
+    "Barry": {
+      "singles": 1500,
+      "doubles": 1391.5600033189028,
+      "singles_games": 0,
+      "doubles_games": 24
+    },
+    "HoiHin": {
+      "singles": 1500,
+      "doubles": 1506.7543026763055,
+      "singles_games": 0,
+      "doubles_games": 6
+    },
+    "Monty": {
+      "singles": 1484.7998305881745,
+      "doubles": 1352.4261987605348,
+      "singles_games": 20,
+      "doubles_games": 63
+    },
+    "William": {
+      "singles": 1738.0291752951694,
+      "doubles": 1775.9255511165231,
+      "singles_games": 10,
+      "doubles_games": 13
+    },
+    "Sahej": {
+      "singles": 1500,
+      "doubles": 1236.479949398342,
+      "singles_games": 0,
+      "doubles_games": 22
+    },
+    "Ben": {
+      "singles": 1500,
+      "doubles": 1393.5213902851908,
+      "singles_games": 0,
+      "doubles_games": 15
+    },
+    "Morgan": {
+      "singles": 1500,
+      "doubles": 1542.01210536075,
+      "singles_games": 0,
+      "doubles_games": 1
+    },
+    "Misha": {
+      "singles": 1691.8001694325244,
+      "doubles": 1801.8555120000672,
+      "singles_games": 11,
+      "doubles_games": 66
+    },
+    "Ed": {
+      "singles": 1480.9711038184753,
+      "doubles": 1211.8341539138378,
+      "singles_games": 2,
+      "doubles_games": 25
+    },
+    "Nola": {
+      "singles": 1500.1084673158578,
+      "doubles": 1421.618881975531,
+      "singles_games": 11,
+      "doubles_games": 78
+    },
+    "Sehon": {
+      "singles": 1364.0340547528872,
+      "doubles": 1560.99388043835,
+      "singles_games": 4,
+      "doubles_games": 35
+    },
+    "Timur": {
+      "singles": 1460.9487588299712,
+      "doubles": 1521.6682740894407,
+      "singles_games": 6,
+      "doubles_games": 8
+    },
+    "Sounak": {
+      "singles": 1500,
+      "doubles": 1319.7522565334723,
+      "singles_games": 0,
+      "doubles_games": 6
+    },
+    "Evan": {
+      "singles": 1543.7741658641546,
+      "doubles": 1516.8900921068248,
+      "singles_games": 1,
+      "doubles_games": 7
+    },
+    "Emiliano": {
+      "singles": 1499.373098622374,
+      "doubles": 1664.063904872693,
+      "singles_games": 2,
+      "doubles_games": 27
+    },
+    "Hao": {
+      "singles": 1500,
+      "doubles": 1476.6283483300897,
+      "singles_games": 0,
+      "doubles_games": 10
+    },
+    "Nicole": {
+      "singles": 1500,
+      "doubles": 1554.5800964094917,
+      "singles_games": 0,
+      "doubles_games": 9
+    },
+    "Alex ": {
+      "singles": 1500,
+      "doubles": 1622.7454424915134,
+      "singles_games": 0,
+      "doubles_games": 6
+    },
+    "Aiden": {
+      "singles": 1500,
+      "doubles": 1406.81936801302,
+      "singles_games": 0,
+      "doubles_games": 10
+    },
+    "Martin": {
+      "singles": 1500,
+      "doubles": 1531.4790327205537,
+      "singles_games": 0,
+      "doubles_games": 10
+    },
+    "Archie": {
+      "singles": 1444.7624324308456,
+      "doubles": 1185.0368584805165,
+      "singles_games": 1,
+      "doubles_games": 15
+    },
+    "Fergus": {
+      "singles": 1393.6410548338752,
+      "doubles": 1574.6668261641732,
+      "singles_games": 5,
+      "doubles_games": 7
+    },
+    "Jeremy": {
+      "singles": 1500,
+      "doubles": 1476.7022922086114,
+      "singles_games": 0,
+      "doubles_games": 6
+    },
+    "Samuel": {
+      "singles": 1221.6797724175108,
+      "doubles": 1230.5262121579246,
+      "singles_games": 7,
+      "doubles_games": 30
+    },
+    "Sophia": {
+      "singles": 1500,
+      "doubles": 1508.204405346108,
+      "singles_games": 0,
+      "doubles_games": 5
+    },
+    "Arjun": {
+      "singles": 1460.8675380209947,
+      "doubles": 1303.9013080075,
+      "singles_games": 1,
+      "doubles_games": 22
+    },
+    "Gabriel": {
+      "singles": 1356.4967339100413,
+      "doubles": 1446.3604770148704,
+      "singles_games": 2,
+      "doubles_games": 2
+    },
+    "Ayan": {
+      "singles": 1394.8479202911403,
+      "doubles": 1500,
+      "singles_games": 2,
+      "doubles_games": 0
+    },
+    "Rishi": {
+      "singles": 1500,
+      "doubles": 1623.0779440031708,
+      "singles_games": 0,
+      "doubles_games": 7
+    },
+    "Luke": {
+      "singles": 1500,
+      "doubles": 1360.8881759430672,
+      "singles_games": 0,
+      "doubles_games": 3
+    },
+    "Hayden": {
+      "singles": 1500,
+      "doubles": 1555.6420530099397,
+      "singles_games": 0,
+      "doubles_games": 2
+    },
+    "Thomas": {
+      "singles": 1500,
+      "doubles": 1461.0794773593418,
+      "singles_games": 0,
+      "doubles_games": 2
+    },
+    "Alex Zhou": {
+      "singles": 1500,
+      "doubles": 1477.2620541019057,
+      "singles_games": 0,
+      "doubles_games": 2
+    },
+    "Alex Mirzoyan": {
+      "singles": 1419.4471514937322,
+      "doubles": 1433.436960546135,
+      "singles_games": 2,
+      "doubles_games": 2
+    },
+    "Leo": {
+      "singles": 1500,
+      "doubles": 1576.3774688832239,
+      "singles_games": 0,
+      "doubles_games": 2
+    },
+    "Owen": {
+      "singles": 1466.6333551382463,
+      "doubles": 1201.1749207074572,
+      "singles_games": 1,
+      "doubles_games": 14
+    },
+    "Nico": {
+      "singles": 1500,
+      "doubles": 1424.233628052008,
+      "singles_games": 0,
+      "doubles_games": 1
+    },
+    "Lydia": {
+      "singles": 1519.0288961815247,
+      "doubles": 1500,
+      "singles_games": 2,
+      "doubles_games": 0
+    }
+  },
+  {
+    "Hercules": {
+      "singles": 1762.5860607152406,
+      "doubles": 2140.273931565836,
+      "singles_games": 20,
+      "doubles_games": 83
+    },
+    "Indigo": {
+      "singles": 1531.5595303265993,
+      "doubles": 1783.005188707996,
+      "singles_games": 9,
+      "doubles_games": 14
+    },
+    "Barry": {
+      "singles": 1500,
+      "doubles": 1391.5600033189028,
+      "singles_games": 0,
+      "doubles_games": 24
+    },
+    "HoiHin": {
+      "singles": 1500,
+      "doubles": 1506.7543026763055,
+      "singles_games": 0,
+      "doubles_games": 6
+    },
+    "Monty": {
+      "singles": 1484.7998305881745,
+      "doubles": 1352.4261987605348,
+      "singles_games": 20,
+      "doubles_games": 63
+    },
+    "William": {
+      "singles": 1738.0291752951694,
+      "doubles": 1775.9255511165231,
+      "singles_games": 10,
+      "doubles_games": 13
+    },
+    "Sahej": {
+      "singles": 1500,
+      "doubles": 1236.479949398342,
+      "singles_games": 0,
+      "doubles_games": 22
+    },
+    "Ben": {
+      "singles": 1500,
+      "doubles": 1393.5213902851908,
+      "singles_games": 0,
+      "doubles_games": 15
+    },
+    "Morgan": {
+      "singles": 1500,
+      "doubles": 1542.01210536075,
+      "singles_games": 0,
+      "doubles_games": 1
+    },
+    "Misha": {
+      "singles": 1691.8001694325244,
+      "doubles": 1801.8555120000672,
+      "singles_games": 11,
+      "doubles_games": 66
+    },
+    "Ed": {
+      "singles": 1480.9711038184753,
+      "doubles": 1211.8341539138378,
+      "singles_games": 2,
+      "doubles_games": 25
+    },
+    "Nola": {
+      "singles": 1540.97924766599,
+      "doubles": 1421.618881975531,
+      "singles_games": 12,
+      "doubles_games": 78
+    },
+    "Sehon": {
+      "singles": 1364.0340547528872,
+      "doubles": 1560.99388043835,
+      "singles_games": 4,
+      "doubles_games": 35
+    },
+    "Timur": {
+      "singles": 1460.9487588299712,
+      "doubles": 1521.6682740894407,
+      "singles_games": 6,
+      "doubles_games": 8
+    },
+    "Sounak": {
+      "singles": 1500,
+      "doubles": 1319.7522565334723,
+      "singles_games": 0,
+      "doubles_games": 6
+    },
+    "Evan": {
+      "singles": 1543.7741658641546,
+      "doubles": 1516.8900921068248,
+      "singles_games": 1,
+      "doubles_games": 7
+    },
+    "Emiliano": {
+      "singles": 1499.373098622374,
+      "doubles": 1664.063904872693,
+      "singles_games": 2,
+      "doubles_games": 27
+    },
+    "Hao": {
+      "singles": 1500,
+      "doubles": 1476.6283483300897,
+      "singles_games": 0,
+      "doubles_games": 10
+    },
+    "Nicole": {
+      "singles": 1500,
+      "doubles": 1554.5800964094917,
+      "singles_games": 0,
+      "doubles_games": 9
+    },
+    "Alex ": {
+      "singles": 1500,
+      "doubles": 1622.7454424915134,
+      "singles_games": 0,
+      "doubles_games": 6
+    },
+    "Aiden": {
+      "singles": 1500,
+      "doubles": 1406.81936801302,
+      "singles_games": 0,
+      "doubles_games": 10
+    },
+    "Martin": {
+      "singles": 1500,
+      "doubles": 1531.4790327205537,
+      "singles_games": 0,
+      "doubles_games": 10
+    },
+    "Archie": {
+      "singles": 1444.7624324308456,
+      "doubles": 1185.0368584805165,
+      "singles_games": 1,
+      "doubles_games": 15
+    },
+    "Fergus": {
+      "singles": 1393.6410548338752,
+      "doubles": 1574.6668261641732,
+      "singles_games": 5,
+      "doubles_games": 7
+    },
+    "Jeremy": {
+      "singles": 1500,
+      "doubles": 1476.7022922086114,
+      "singles_games": 0,
+      "doubles_games": 6
+    },
+    "Samuel": {
+      "singles": 1221.6797724175108,
+      "doubles": 1230.5262121579246,
+      "singles_games": 7,
+      "doubles_games": 30
+    },
+    "Sophia": {
+      "singles": 1500,
+      "doubles": 1508.204405346108,
+      "singles_games": 0,
+      "doubles_games": 5
+    },
+    "Arjun": {
+      "singles": 1460.8675380209947,
+      "doubles": 1303.9013080075,
+      "singles_games": 1,
+      "doubles_games": 22
+    },
+    "Gabriel": {
+      "singles": 1356.4967339100413,
+      "doubles": 1446.3604770148704,
+      "singles_games": 2,
+      "doubles_games": 2
+    },
+    "Ayan": {
+      "singles": 1394.8479202911403,
+      "doubles": 1500,
+      "singles_games": 2,
+      "doubles_games": 0
+    },
+    "Rishi": {
+      "singles": 1500,
+      "doubles": 1623.0779440031708,
+      "singles_games": 0,
+      "doubles_games": 7
+    },
+    "Luke": {
+      "singles": 1500,
+      "doubles": 1360.8881759430672,
+      "singles_games": 0,
+      "doubles_games": 3
+    },
+    "Hayden": {
+      "singles": 1500,
+      "doubles": 1555.6420530099397,
+      "singles_games": 0,
+      "doubles_games": 2
+    },
+    "Thomas": {
+      "singles": 1500,
+      "doubles": 1461.0794773593418,
+      "singles_games": 0,
+      "doubles_games": 2
+    },
+    "Alex Zhou": {
+      "singles": 1500,
+      "doubles": 1477.2620541019057,
+      "singles_games": 0,
+      "doubles_games": 2
+    },
+    "Alex Mirzoyan": {
+      "singles": 1419.4471514937322,
+      "doubles": 1433.436960546135,
+      "singles_games": 2,
+      "doubles_games": 2
+    },
+    "Leo": {
+      "singles": 1500,
+      "doubles": 1576.3774688832239,
+      "singles_games": 0,
+      "doubles_games": 2
+    },
+    "Owen": {
+      "singles": 1466.6333551382463,
+      "doubles": 1201.1749207074572,
+      "singles_games": 1,
+      "doubles_games": 14
+    },
+    "Nico": {
+      "singles": 1500,
+      "doubles": 1424.233628052008,
+      "singles_games": 0,
+      "doubles_games": 1
+    },
+    "Lydia": {
+      "singles": 1519.0288961815247,
+      "doubles": 1500,
+      "singles_games": 2,
+      "doubles_games": 0
+    }
+  },
+  {
+    "Hercules": {
+      "singles": 1777.2550112634738,
+      "doubles": 2140.273931565836,
+      "singles_games": 21,
+      "doubles_games": 83
+    },
+    "Indigo": {
+      "singles": 1531.5595303265993,
+      "doubles": 1783.005188707996,
+      "singles_games": 9,
+      "doubles_games": 14
+    },
+    "Barry": {
+      "singles": 1500,
+      "doubles": 1391.5600033189028,
+      "singles_games": 0,
+      "doubles_games": 24
+    },
+    "HoiHin": {
+      "singles": 1500,
+      "doubles": 1506.7543026763055,
+      "singles_games": 0,
+      "doubles_games": 6
+    },
+    "Monty": {
+      "singles": 1484.7998305881745,
+      "doubles": 1352.4261987605348,
+      "singles_games": 20,
+      "doubles_games": 63
+    },
+    "William": {
+      "singles": 1738.0291752951694,
+      "doubles": 1775.9255511165231,
+      "singles_games": 10,
+      "doubles_games": 13
+    },
+    "Sahej": {
+      "singles": 1500,
+      "doubles": 1236.479949398342,
+      "singles_games": 0,
+      "doubles_games": 22
+    },
+    "Ben": {
+      "singles": 1500,
+      "doubles": 1393.5213902851908,
+      "singles_games": 0,
+      "doubles_games": 15
+    },
+    "Morgan": {
+      "singles": 1500,
+      "doubles": 1542.01210536075,
+      "singles_games": 0,
+      "doubles_games": 1
+    },
+    "Misha": {
+      "singles": 1691.8001694325244,
+      "doubles": 1801.8555120000672,
+      "singles_games": 11,
+      "doubles_games": 66
+    },
+    "Ed": {
+      "singles": 1480.9711038184753,
+      "doubles": 1211.8341539138378,
+      "singles_games": 2,
+      "doubles_games": 25
+    },
+    "Nola": {
+      "singles": 1526.3102971177568,
+      "doubles": 1421.618881975531,
+      "singles_games": 13,
+      "doubles_games": 78
+    },
+    "Sehon": {
+      "singles": 1364.0340547528872,
+      "doubles": 1560.99388043835,
+      "singles_games": 4,
+      "doubles_games": 35
+    },
+    "Timur": {
+      "singles": 1460.9487588299712,
+      "doubles": 1521.6682740894407,
+      "singles_games": 6,
+      "doubles_games": 8
+    },
+    "Sounak": {
+      "singles": 1500,
+      "doubles": 1319.7522565334723,
+      "singles_games": 0,
+      "doubles_games": 6
+    },
+    "Evan": {
+      "singles": 1543.7741658641546,
+      "doubles": 1516.8900921068248,
+      "singles_games": 1,
+      "doubles_games": 7
+    },
+    "Emiliano": {
+      "singles": 1499.373098622374,
+      "doubles": 1664.063904872693,
+      "singles_games": 2,
+      "doubles_games": 27
+    },
+    "Hao": {
+      "singles": 1500,
+      "doubles": 1476.6283483300897,
+      "singles_games": 0,
+      "doubles_games": 10
+    },
+    "Nicole": {
+      "singles": 1500,
+      "doubles": 1554.5800964094917,
+      "singles_games": 0,
+      "doubles_games": 9
+    },
+    "Alex ": {
+      "singles": 1500,
+      "doubles": 1622.7454424915134,
+      "singles_games": 0,
+      "doubles_games": 6
+    },
+    "Aiden": {
+      "singles": 1500,
+      "doubles": 1406.81936801302,
+      "singles_games": 0,
+      "doubles_games": 10
+    },
+    "Martin": {
+      "singles": 1500,
+      "doubles": 1531.4790327205537,
+      "singles_games": 0,
+      "doubles_games": 10
+    },
+    "Archie": {
+      "singles": 1444.7624324308456,
+      "doubles": 1185.0368584805165,
+      "singles_games": 1,
+      "doubles_games": 15
+    },
+    "Fergus": {
+      "singles": 1393.6410548338752,
+      "doubles": 1574.6668261641732,
+      "singles_games": 5,
+      "doubles_games": 7
+    },
+    "Jeremy": {
+      "singles": 1500,
+      "doubles": 1476.7022922086114,
+      "singles_games": 0,
+      "doubles_games": 6
+    },
+    "Samuel": {
+      "singles": 1221.6797724175108,
+      "doubles": 1230.5262121579246,
+      "singles_games": 7,
+      "doubles_games": 30
+    },
+    "Sophia": {
+      "singles": 1500,
+      "doubles": 1508.204405346108,
+      "singles_games": 0,
+      "doubles_games": 5
+    },
+    "Arjun": {
+      "singles": 1460.8675380209947,
+      "doubles": 1303.9013080075,
+      "singles_games": 1,
+      "doubles_games": 22
+    },
+    "Gabriel": {
+      "singles": 1356.4967339100413,
+      "doubles": 1446.3604770148704,
+      "singles_games": 2,
+      "doubles_games": 2
+    },
+    "Ayan": {
+      "singles": 1394.8479202911403,
+      "doubles": 1500,
+      "singles_games": 2,
+      "doubles_games": 0
+    },
+    "Rishi": {
+      "singles": 1500,
+      "doubles": 1623.0779440031708,
+      "singles_games": 0,
+      "doubles_games": 7
+    },
+    "Luke": {
+      "singles": 1500,
+      "doubles": 1360.8881759430672,
+      "singles_games": 0,
+      "doubles_games": 3
+    },
+    "Hayden": {
+      "singles": 1500,
+      "doubles": 1555.6420530099397,
+      "singles_games": 0,
+      "doubles_games": 2
+    },
+    "Thomas": {
+      "singles": 1500,
+      "doubles": 1461.0794773593418,
+      "singles_games": 0,
+      "doubles_games": 2
+    },
+    "Alex Zhou": {
+      "singles": 1500,
+      "doubles": 1477.2620541019057,
+      "singles_games": 0,
+      "doubles_games": 2
+    },
+    "Alex Mirzoyan": {
+      "singles": 1419.4471514937322,
+      "doubles": 1433.436960546135,
+      "singles_games": 2,
+      "doubles_games": 2
+    },
+    "Leo": {
+      "singles": 1500,
+      "doubles": 1576.3774688832239,
+      "singles_games": 0,
+      "doubles_games": 2
+    },
+    "Owen": {
+      "singles": 1466.6333551382463,
+      "doubles": 1201.1749207074572,
+      "singles_games": 1,
+      "doubles_games": 14
+    },
+    "Nico": {
+      "singles": 1500,
+      "doubles": 1424.233628052008,
+      "singles_games": 0,
+      "doubles_games": 1
+    },
+    "Lydia": {
+      "singles": 1519.0288961815247,
+      "doubles": 1500,
+      "singles_games": 2,
+      "doubles_games": 0
+    }
   }
 ]
