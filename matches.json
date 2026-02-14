@@ -3387,5 +3387,29 @@
     ],
     "score1": 5,
     "score2": 0
+  },
+  {
+    "timestamp": "2026-02-14 01:00:39",
+    "mode": "singles",
+    "team1": "Monty",
+    "team2": "Hercules",
+    "score1": 7,
+    "score2": 5
+  },
+  {
+    "timestamp": "2026-02-14 01:00:51",
+    "mode": "singles",
+    "team1": "Monty",
+    "team2": "Hercules",
+    "score1": 2,
+    "score2": 7
+  },
+  {
+    "timestamp": "2026-02-14 01:00:58",
+    "mode": "singles",
+    "team1": "Monty",
+    "team2": "Hercules",
+    "score1": 7,
+    "score2": 5
   }
 ]

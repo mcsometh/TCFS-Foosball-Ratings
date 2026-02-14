@@ -1,8 +1,8 @@
 {
   "Hercules": {
-    "singles": 1786.2769912221584,
+    "singles": 1713.1610638138293,
     "doubles": 1991.5052057177468,
-    "singles_games": 22,
+    "singles_games": 25,
     "doubles_games": 96
   },
   "Indigo": {
@@ -24,9 +24,9 @@
     "doubles_games": 6
   },
   "Monty": {
-    "singles": 1475.7778506294899,
+    "singles": 1548.893778037819,
     "doubles": 1358.9860824167401,
-    "singles_games": 21,
+    "singles_games": 24,
     "doubles_games": 76
   },
   "William": {
