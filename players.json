@@ -1,15 +1,15 @@
 {
   "Hercules": {
     "singles": 1731.961665492816,
-    "doubles": 1991.5052057177468,
+    "doubles": 2074.304487329531,
     "singles_games": 26,
-    "doubles_games": 96
+    "doubles_games": 102
   },
   "Indigo": {
     "singles": 1531.5595303265993,
-    "doubles": 1783.005188707996,
+    "doubles": 1766.5606504908983,
     "singles_games": 9,
-    "doubles_games": 14
+    "doubles_games": 16
   },
   "Barry": {
     "singles": 1500,
@@ -25,9 +25,9 @@
   },
   "Monty": {
     "singles": 1530.0931763588321,
-    "doubles": 1358.9860824167401,
+    "doubles": 1374.0084990812857,
     "singles_games": 25,
-    "doubles_games": 76
+    "doubles_games": 77
   },
   "William": {
     "singles": 1738.0291752951694,
@@ -55,21 +55,21 @@
   },
   "Misha": {
     "singles": 1691.8001694325244,
-    "doubles": 1896.311453443276,
+    "doubles": 1885.3863422398215,
     "singles_games": 11,
-    "doubles_games": 74
+    "doubles_games": 76
   },
   "Ed": {
     "singles": 1584.4768068227809,
-    "doubles": 1316.9183169382277,
+    "doubles": 1301.798857227693,
     "singles_games": 4,
-    "doubles_games": 35
+    "doubles_games": 39
   },
   "Nola": {
     "singles": 1526.3102971177568,
-    "doubles": 1495.0982701971175,
+    "doubles": 1528.6835584023659,
     "singles_games": 13,
-    "doubles_games": 90
+    "doubles_games": 96
   },
   "Sehon": {
     "singles": 1364.0340547528872,
@@ -91,9 +91,9 @@
   },
   "Evan": {
     "singles": 1543.7741658641546,
-    "doubles": 1516.8900921068248,
+    "doubles": 1510.7292090421713,
     "singles_games": 1,
-    "doubles_games": 7
+    "doubles_games": 9
   },
   "Emiliano": {
     "singles": 1499.373098622374,
@@ -169,9 +169,9 @@
   },
   "Gabriel": {
     "singles": 1356.4967339100413,
-    "doubles": 1383.0924415104555,
+    "doubles": 1353.0476081813647,
     "singles_games": 2,
-    "doubles_games": 4
+    "doubles_games": 5
   },
   "Ayan": {
     "singles": 1394.8479202911403,
@@ -217,9 +217,9 @@
   },
   "Leo": {
     "singles": 1500,
-    "doubles": 1576.3774688832239,
+    "doubles": 1557.2909060079419,
     "singles_games": 0,
-    "doubles_games": 2
+    "doubles_games": 4
   },
   "Owen": {
     "singles": 1466.6333551382463,
@@ -274,5 +274,11 @@
     "doubles": 1347.6446133353659,
     "singles_games": 0,
     "doubles_games": 5
+  },
+  "Maksym": {
+    "singles": 1500,
+    "doubles": 1398.6398242972439,
+    "singles_games": 0,
+    "doubles_games": 6
   }
 }
